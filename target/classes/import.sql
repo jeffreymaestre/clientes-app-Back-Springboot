@@ -32,3 +32,20 @@ INSERT INTO `roles` (nombre) VALUES ('ROLE_ADMIN');
 INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (1, 1);
 INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 2);
 INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 1);
+
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Televisor', 259990, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Celular', 4285, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Nevera', 19346, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Lavadora', 628934, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Plancha', 263945, NOW());
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura de equipos de oficina', null, 1, Now());
+
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1,1,1);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (2,1,4);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1,1,5);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1,1,3);
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura Bicicleta', 'Alguna nota importante!', 1, Now());
+
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (3,2,5);
